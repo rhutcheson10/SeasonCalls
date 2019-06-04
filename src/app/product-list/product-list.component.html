@@ -1,4 +1,24 @@
-<h2>Products</h2>
+
+<h2> Current Calls Avaliable</h2>
+
+
+<div *ngFor="let callproducts of callproducts">
+
+    <h3>
+<a [title]="callproducts.name">
+ {{callproducts.name}}
+ <br>
+ <a href=""><img src="https://i.ibb.co/sPk204w/black-call.jpg" alt="black-call" border="0"></a>
+</a>
+
+<p  *ngIf="callproducts.description">
+    Description: 
+    <br>
+    {{ callproducts.description }}
+  </p>
+
+  
+  </h3>
 
 
 <!-- 
