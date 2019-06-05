@@ -3,7 +3,7 @@ export const callproducts = [
     name: 'Season GH2',
     price: 180,
     colour: 'Black',
-    description: 'The GH2 Fist Seasons Call in Flat Smoke or flat black'
+    description: 'The GH2 First Seasons Call in Flat Smoke or flat black'
   }
 ];
 
