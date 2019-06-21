@@ -4,9 +4,12 @@
   <a routerLink="/shipping">Shipping Prices</a>
 </p>
 
+<p>Items in Cart:</p>
+
+
 <div class="cart-item" *ngFor="let item of items">
-  <span>{{ item.name }}</span>
-  <span>{{ item.price | currency }}</span>
+  {{ item.name }}
+  {{ item.price | currency }}
 </div>
 
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
