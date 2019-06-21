@@ -1,14 +1,14 @@
 [
   {
     "type": "Overnight",
-    "price": 25.99
+    "price": 8
   },
   {
-    "type": "2-Day",
-    "price": 9.99
+    "type": "Rural",
+    "price": 6
   },
   {
-    "type": "Postal",
+    "type": "3-5 Day",
     "price": 2.99
   }
 ]

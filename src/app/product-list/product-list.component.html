@@ -1,24 +1,30 @@
 
-<h2> Current Calls Avaliable</h2>
+<h2> Season Calls Avaliable</h2>
 
 
-<div *ngFor="let callproducts of callproducts">
+<div *ngFor="let callproducts of callproducts; index as productId">
 
     <h3>
-<a [title]="callproducts.name">
+<a [title]="callproducts.name"[routerLink]="['/callproducts', productId]">
  {{callproducts.name}}
+
  <br>
- <a href=""><img src="https://i.ibb.co/sPk204w/black-call.jpg" alt="black-call" border="0"></a>
+ 
 </a>
+<p  *ngIf="callproducts.Image"[routerLink]="['/callproducts', productId]">
 
-<p  *ngIf="callproducts.description">
-    Description: 
+    <img src="https://i.ibb.co/bFTLLxT/rsz-2white-season-call.jpg" alt="rsz-2white-season-call" border="0">
     <br>
-    {{ callproducts.description }}
-  </p>
-
-  
+    <button (click)="['/callproducts', productId]">More Info </button>
+    
+<p *ngIf="callproducts.Image2"[routerLink]="['/callproducts', productId]">
+<img src="https://i.ibb.co/XbD9xh2/rsz-yellow.jpg" alt="rsz-yellow" border="0">
+<br>
+<button (click)="['/callproducts', productId]">More Info</button>
   </h3>
+  
+
+
 
 
 <!-- 

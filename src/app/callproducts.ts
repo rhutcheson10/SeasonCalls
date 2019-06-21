@@ -1,9 +1,19 @@
 export const callproducts = [
   {
-    name: 'Season GH2',
+    name: 'Season GH2 White',
     price: 180,
-    colour: 'Black',
-    description: 'The GH2 First Seasons Call in Flat Smoke or flat black'
+    colour: 'White',
+    description: 'The GH2 In a White',
+    Image: "https://i.ibb.co/bFTLLxT/rsz-2white-season-call.jpg"
+
+  },
+  {
+    name: 'Season GH2 Yellow',
+    price: 180,
+    colour: '',
+    description: 'The GH2 in Yellow',
+    Image2:"https://i.ibb.co/bFTLLxT/rsz-2white-season-call.jpg"
+
   }
 ];
 
